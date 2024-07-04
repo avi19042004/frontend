@@ -18,7 +18,7 @@ const ShopCategory = (props) => {
 
   return (
     <div className='shop-category'>
-      <img className='shopcategory-banner' src={props.banner} alt="" />
+      {/* <img className='shopcategory-banner' src={props.banner} alt="" /> */}
       <div className="shopcategory-indexSort">
         <p>
           <span>Showing 1-{Math.min(displayCount, all_product.length)}</span> out of {all_product.length} products
