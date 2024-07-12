@@ -9,7 +9,7 @@ const RelatedProduct = ({ category }) => {
     fetch('https://backend-main-yi7u.onrender.com/allproduct')
       .then((response) => response.json())
       .then((data) => {
-        const filteredProducts = data.filter(item => item.category === category);
+        const filteredProducts = data;
         // Slice the array to get only the first 4 items
         setPopular(filteredProducts.slice(0, 4));
       })
